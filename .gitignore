@@ -1,0 +1,7 @@
+*.o
+*.so
+*.cxx
+*.pyc
+*.DS_Store
+.idea/
+code/libcpm.py
