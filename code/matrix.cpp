@@ -44,9 +44,9 @@ Table Matrix::operator*(const Table& table_in) const {
     Table result(s1, s2);
     for (int i=0; i<s1; i++){
 	    for (int j=0; j<s2; j++) {
-	        double somme = 0;
-	        for (int k=0; k<s1; k++) somme += (*this)(i, k)*table_in(k,j);
-	        result.set(i,j) = somme;
+	        double sum = 0;
+	        for (int k=0; k<s1; k++) sum += (*this)(i, k)*table_in(k,j);
+	        result.set(i,j) = sum;
 	    }
 	}
     return result;
